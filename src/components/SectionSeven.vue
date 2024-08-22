@@ -37,7 +37,7 @@ const showHideElement2 = () =>{
                 </p>
             </div>
         </div>
-        <div class="form__seven d-flex justify-content-center align-items-center" v-if="showElement1">
+        <div class="form__seven col-md d-flex justify-content-center align-items-center" v-if="showElement1">
             <TrueContact />
         </div>
         <div class="form__seven d-flex justify-content-center align-items-center" v-if="showElement2">
