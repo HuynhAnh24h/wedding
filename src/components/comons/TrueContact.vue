@@ -1,7 +1,7 @@
 <script setup>
 </script>
 <template>
-    <div class="col-md-6 ">
+    <div class="w-100">
         <form>
             <div class="mb-3">
                 <label for="text" class="form-label form__title">Họ và tên</label>
