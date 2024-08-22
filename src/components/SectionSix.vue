@@ -205,9 +205,7 @@ ul, li {
     line-height: 1.6;
     font-family: var(--font--title);
 }
-.active{
-    opacity: 0.5;
-}
+
 @media screen and (max-width: 992px) {
   .session__six{
     display: none;
