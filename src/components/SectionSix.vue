@@ -206,7 +206,7 @@ ul, li {
     font-family: var(--font--title);
 }
 .active{
-    opacity: 0.8;
+    opacity: 0.5;
 }
 @media screen and (max-width: 992px) {
   .session__six{
