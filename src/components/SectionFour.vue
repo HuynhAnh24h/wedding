@@ -103,5 +103,19 @@
     .bottom__row{
       flex-wrap: wrap-reverse;
     }
+    .content__text{
+      font-size: 18px;
+    }
+    .content__title{
+      font-size: 25px;
+    }
+}
+@media screen and (max-width: 768px ) {
+    .content__text{
+      font-size: 16px;
+    }
+    .content__title{
+      font-size: 20px;
+    }
 }
 </style>
