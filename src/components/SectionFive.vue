@@ -9,7 +9,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active ">
                         <div class="row d-flex justify-content-center align-content-center">
-                            <div class="col-md-6">
+                            <div class="col-md-9">
                                 <div class="img__slide__item">
                                     <img src="../assets/five__left.png" class="card-img-top" alt="..." />
                                 </div>
@@ -18,7 +18,7 @@
                     </div>
                     <div class="carousel-item ">
                         <div class="row d-flex justify-content-center align-content-center">
-                            <div class="col-md-6">
+                            <div class="col-md-9">
                                 <div class="img__slide__item">
                                     <img src="../assets/five__left.png" class="card-img-top" alt="..." />
                                 </div>
@@ -88,6 +88,10 @@ import { RouterLink } from "vue-router";
     .session__five::before{
       height: 150px;
       width: 100px;
+    }
+    .img__slide__item{
+      width: 100%;
+      height: 500px;
     }
 }
 </style>
