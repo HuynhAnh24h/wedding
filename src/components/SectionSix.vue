@@ -196,6 +196,7 @@ ul, li {
     color: var(--primary--color);
     font-weight: 800;
     font-family: var(--font--title);
+    border-radius: 5px;
 }
 .love__desc{
     font-size: 18px;
@@ -203,6 +204,9 @@ ul, li {
     padding-top: 10px;
     line-height: 1.6;
     font-family: var(--font--title);
+}
+.active{
+    opacity: 0.8;
 }
 @media screen and (max-width: 992px) {
   .session__six{
