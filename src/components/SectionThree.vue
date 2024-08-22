@@ -1,5 +1,5 @@
 <template>
-    <section class="session__content">
+    <section class="session__content d-flex flex-column justify-content-center align-items-center">
         <div class="container py-5">
             <div class="row d-flex flex-column justify-content-center align-items-center">
                 <div class="col-md pt-3">
@@ -64,5 +64,33 @@
     font-size: 45px;
     margin-bottom: 0;
     line-height: 1.6;
+}
+
+@media screen and (max-width: 992px ) {
+    .session__content::after{
+        top: 0px;
+        left: -90px;
+        width: 250px;
+        height: 250px;
+        background-position-x: 65%;
+        background-position-y: 50%;
+    }
+    .session__content::before{
+        width: 150px;
+        bottom: 0px;
+        background-position-x: 45%;
+    }
+
+    .banner__text{
+        font-size: 20px;
+    }
+
+    .text__title__content{
+        font-size: 28px;
+    }
+
+    .sub__text__content{
+        font-size: 18px;
+    }
 }
 </style>

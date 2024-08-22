@@ -4,7 +4,7 @@
       Hình cưới chúng mình nè
     </p>
     <div class="container py-3">
-      <div class="row d-flex justify-content-center align-items-center py-3">
+      <div class="row d-flex justify-content-center align-items-center py-3 gap-2">
         <div class="col-md-3">
             <RouterLink to="/library">
                 <img src="../assets/five__left.png" class="w-100" alt="">
@@ -40,5 +40,16 @@ import { RouterLink } from "vue-router";
     font-size: 45px;
     margin-bottom: 0;
     line-height: 1.6;
+}
+
+@media screen and (max-width: 992px ) {
+    .banner__text, .five__title{
+        font-size: 20px;
+    }
+    .session__five::after,
+    .session__five::before{
+      height: 150px;
+      width: 100px;
+    }
 }
 </style>

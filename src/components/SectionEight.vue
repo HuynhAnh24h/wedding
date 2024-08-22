@@ -13,5 +13,18 @@
     color: var(--primary--color);
     font-weight: 500;
 }
+
+@media screen and (max-width: 992px ) {
+    .text__end{
+        font-size: 30px;
+    }
+    .session__eight::after{
+        background-position-x: 100%;
+    }
+    .session__eight::after,
+    .session__eight::before{
+        width: 150px;
+    }
+}
 </style>
 

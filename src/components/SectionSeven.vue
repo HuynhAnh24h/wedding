@@ -57,7 +57,6 @@ const showHideElement2 = () =>{
 
 .seven__btn{
     padding: 10px 30px;
-    width: 300px;
     border: 1px solid var(--bg--banner);
     font-size: 18px;
     font-weight: 400;
@@ -82,4 +81,5 @@ const showHideElement2 = () =>{
     background: var(--bg--banner);
     cursor: pointer;
 }
+
 </style>

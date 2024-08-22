@@ -18,7 +18,7 @@
                     </div>
                </div>
             </div>
-            <div class="d-flex justify-content-center align-items-center">
+            <div class="c">
                 <button type="submit" class="btn__submit text-uppercase">gửi</button>
             </div>
             </form>

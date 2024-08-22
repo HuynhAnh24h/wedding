@@ -1,19 +1,15 @@
 <template>
-  <section
-    class="sections__four py-5 d-flex justify-content-between align-items-center"
-  >
-    <div class="left">
-      <div class="left__img">
-        <img src="../assets/session__3__left.png" alt="" />
-      </div>
-    </div>
-    <div class="middle">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-md d-flex flex-column justify-content-center align-items-center"
-          >
-            <div class="middle__content">
+  <section class="sections__four py-5">
+    <div class="container d-flex flex-column gap-3 justify-content-center align-items-center">
+      <div class="top d-flex justify-content-center align-items-center">
+        <div class="container">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="image col-md-4">
+              <div class="style__img">
+                <img src="../assets/session__3__left.png" alt="" />
+              </div>
+            </div>
+            <div class="content col-md-6">
               <p class="content__title text-center text-uppercase">Cô dâu</p>
               <p class="content__text text-center">
                 <span class="hight__light__text">CÔ DÂU THANH TRÀ</span> cung
@@ -36,7 +32,13 @@
                 >.
               </p>
             </div>
-            <div class="middle__content">
+          </div>
+        </div>
+      </div>
+      <div class="bottom d-flex justify-content-center align-items-center">
+        <div class="container">
+        <div class="bottom__row row d-flex justify-content-center align-items-center">
+            <div class="content col-md-6">
               <p class="content__title text-center text-uppercase">Chú rể</p>
               <p class="content__text text-center">
                 <span class="hight__light__text">Chú rể tuấn đạt</span> cung
@@ -56,13 +58,13 @@
                 10 mấy cây đàn giutar ra thì có sở thích so sánh eo cây đàn với eo vợ.
               </p>
             </div>
+            <div class="image col-md-4">
+              <div class="style__img"     >
+                <img src="../assets/session__3__right.png" alt="" />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="right">
-      <div class="right__img">
-        <img src="../assets/session__3__right.png" alt="" />
       </div>
     </div>
   </section>
@@ -86,5 +88,20 @@
 .hight__light__text {
   text-transform: uppercase;
   font-weight: 500;
+}
+
+.style__img {
+  width: 100%;
+}
+
+.style__img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 992px ) {
+    .bottom__row{
+      flex-wrap: wrap-reverse;
+    }
 }
 </style>

@@ -24,11 +24,15 @@ p{
   padding-bottom: 0;
 }
 body{
-  background-color: var(--background--color);
+  background: url(../assets/session__1__bg.png);
+  background-size: cover;
 }
 .heading{
-  background-color: var(--background--color);
   position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: url(../assets/session__1__bg.png);
 }
 
 .heading::after{
@@ -56,13 +60,14 @@ body{
 }
 
 .session__image{
-  background: var(--background--color);
   position: relative;
+  background: url(../assets/session__1__bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
 .session__content{
-  background: var(--background--color);
   position: relative;
 }
 
@@ -91,11 +96,12 @@ body{
 }
 
 .sections__four{
-  background: var(--background--color);
+  background: url(../assets/session__1__bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .session__five{
-  background: var(--background--color);
   position: relative;
 }
 
@@ -124,11 +130,11 @@ body{
 }
 
 .session__six{
-  background: var(--background--color);
+  
 }
 
 .session__seven{
-  background: var(--background--color);
+
 }
 
 .session__eight{
