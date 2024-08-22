@@ -159,3 +159,6 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
 }
+.session__six{
+  display: block;
+}

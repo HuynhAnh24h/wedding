@@ -1,6 +1,6 @@
 <template>
     <section class="session__six flex-column justify-content-center align-items-center">
-       <div class="container py-5 d-flex flex-nowrap justify-content-end">
+       <div class="container py-5 d-flex flex-nowrap justify-content-end ">
         <input type="radio" name="slide" id="c1" checked>
         <label for="c1" class="card d-flex justify-content-end">
             <div class="row">
@@ -36,6 +36,57 @@
         </label>
        </div>
     </section>
+    <section class="session__six__mobile  p-5">
+        <ul class="list__sory d-flex justify-content-between align-items-center " id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="list__story__link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                    Giai đoạn tìm hiểu
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="list__story__link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    Câu chuyện tình yêu
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="list__story__link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                    Quyết định của cả hai
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="love__story">
+                    <div class="story__img__head">
+                        <img src="../assets/c-1.png" class="w-100" alt="">
+                    </div>
+                    <div class="love__desc">
+                        Cả 2 biết nhau thông qua một hội guitar vào năm 2018 , Tuấn Đạt thì đánh đàn còn Thanh Trà đi nghe hát thôi chứ chưa vào nghề. Kết bạn facebook đc một thời gian thì cãi nhau to chỉ vì con rồng nam mĩ nhà dì 3 của cd nuôi. Sau đó cả 2 block nhau quyết không bao giờ gặp lại
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="love__story">
+                    <div class="story__img__head">
+                        <img src="../assets/c-2.png" class="w-100" alt="">
+                    </div>
+                    <div class="love__desc">
+                        Một thời gian sau khi cô dâu đi nghe Acoustic cùng một người anh thì vô tình người anh đó là bạn chú rể , hơi ngại nhưng nói chuyện lại và mở block. Chú rể khá ít nói và khép mình lại không muốn chơi hay nói chuyện với ai, chỉ nhốt mình ở nhà. Còn cô dâu thì hướng ngoại, nói nhiều , hoạt bát vui vẻ khiến chú rể mở lòng hơn. Bữa đi chơi đầu tiên là rủ đi coi phim ma Valak chú rể ngủ hết phim vì quá chán, ngáy to nữa. Ngày chính thức quen nhau là ngày công chiếu Valak 9/9/2018 nhưng chú rể không bao giờ nhớ nên ăn giận mấy lần
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="love__story">
+                    <div class="story__img__head">
+                        <img src="../assets/c-3.png" class="w-100" alt="">
+                    </div>
+                    <div class="love__desc">
+                        Quen nhau, trải qua những ngày nắng mưa cùng nhau đi show cùng ăn sập thế giới và cả 2 tăng cân ú nu luôn. Vui có buồn cũng có, có lúc tưởng chừng muốn bỏ cuộc không muốn quen nhau nữa nhưng cuối cùng vẫn chọn ở lại cùng nhau giờ tròn 6 năm - cũng là ngày cưới được tổ chức
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 <script setup></script>
 <style lang="css" scoped>
@@ -50,6 +101,7 @@
     transition: .6s cubic-bezier(.28,-0.03,0,.99);
     border: none;
 }
+
 
 .card > .row{
     display: flex;
@@ -123,5 +175,42 @@ input:checked + label .desc{
     background: url(../assets/c-3.png);
     background-size: cover;
     background-position-x: 45%;
+}
+
+.session__six__mobile{
+    display: none;
+}
+
+ul, li {
+    list-style: none;
+}
+.list__sory{
+    padding: 0;
+    gap: 5px;
+}
+
+.list__story__link{
+    padding: 5px;
+    border: none;
+    background-color: var(--bg--stunning);
+    color: var(--primary--color);
+    font-weight: 800;
+    font-family: var(--font--title);
+}
+.love__desc{
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 10px;
+    line-height: 1.6;
+    font-family: var(--font--title);
+}
+@media screen and (max-width: 992px) {
+  .session__six{
+    display: none;
+  }
+
+  .session__six__mobile{
+    display: block;
+  }
 }
 </style>
